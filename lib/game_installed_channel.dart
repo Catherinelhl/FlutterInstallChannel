@@ -56,7 +56,7 @@ class InstallGameStateChannel{
   /// Get the list of all installed apps, where
   /// each app has a form like [checkAvailability()].
   static Future<List<Map<String, String>>> getInstalledApps() async {
-    List<dynamic> apps = await _channel.invokeMethod("2");
+    List<dynamic> apps = await _channel.invokeMethod("installedApp");
     if (apps != null && apps is List) {
       List<Map<String, String>> list = new List();
       for (var app in apps) {

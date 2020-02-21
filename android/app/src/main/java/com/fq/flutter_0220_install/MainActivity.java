@@ -44,7 +44,7 @@ public class MainActivity extends FlutterActivity {
                                     uriSchema = call.argument("uri").toString();
                                     this.checkAvailability( uriSchema, result );
                                     break;
-                                case "2":
+                                case "installedApp":
                                     result.success(getInstalledApps());
                                     break;
                                 default:

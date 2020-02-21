@@ -1,0 +1,89 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fq.flutter_0220_install"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <!--
+16     io.flutter.app.FlutterApplication is an android.app.Application that
+17         calls FlutterMain.startInitialization(this); in its onCreate method.
+18         In most cases you can leave this as-is, but you if you want to provide
+19         additional functionality it is fine to subclass or reimplement
+20         FlutterApplication and put your custom class here.
+21    -->
+22    <application
+22-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:9:5-47:19
+23        android:name="io.flutter.app.FlutterApplication"
+23-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:10:9-57
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.0.0] /Users/catherine/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:22:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:11:9-43
+27        android:label="flutter_0220_install" >
+27-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:12:9-45
+28        <activity
+28-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:13:9-24:20
+29            android:name="com.fq.flutter_0220_install.MainActivity"
+29-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:14:13-41
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:15:13-163
+31            android:hardwareAccelerated="true"
+31-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:16:13-47
+32            android:launchMode="singleTop"
+32-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:17:13-43
+33            android:theme="@style/LaunchTheme"
+33-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:18:13-47
+34            android:windowSoftInputMode="adjustResize" >
+34-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:19:13-55
+35            <intent-filter>
+35-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:20:13-23:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:21:17-69
+36-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:21:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:22:17-77
+38-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:22:27-74
+39            </intent-filter>
+40        </activity>
+41        <!--
+42             Don't delete the meta-data below.
+43             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+44        -->
+45        <meta-data
+45-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:27:9-29:33
+46            android:name="flutterEmbedding"
+46-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:28:13-44
+47            android:value="2" />
+47-->/Users/catherine/Flutter/AndroidFlutterProject/flutter_0220_install/android/app/src/main/AndroidManifest.xml:29:13-30
+48
+49        <!-- <receiver android:name=".receiver.PackageReceiver" android:enabled="true" > -->
+50        <!-- <intent-filter> -->
+51        <!-- &lt;!&ndash; 一个新应用包已经安装在设备上，数据包括包名（监听所在的app，新安装时，不能接收到这个广播）&ndash;&gt; -->
+52        <!--                 -->
+53        <!-- <action android:name="android.intent.action.PACKAGE_ADDED" /> -->
+54        <!-- &lt;!&ndash; 一个新版本的应用安装到设备，替换之前已经存在的版本  替换时会先收到卸载的再收到替换的， 替换自身也能收到&ndash;&gt;      -->
+55        <!-- <action android:name="android.intent.action.PACKAGE_REPLACED" /> -->
+56        <!-- &lt;!&ndash;    一个已存在的应用程序包已经从设备上移除，包括包名（卸载监听所在的app，则无法接收到） &ndash;&gt; -->
+57        <!--                 -->
+58        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+59        <!-- <action android:name="android.intent.action.PACKAGE_CHANGED"/> -->
+60        <!-- <action android:name="android.intent.action.PACKAGE_RESTARTED"/> -->
+61        <!-- <action android:name="android.intent.action.PACKAGE_INSTALL"/> -->
+62        <!-- <data android:scheme="package"></data> -->
+63        <!-- </intent-filter> -->
+64        <!-- </receiver> -->
+65    </application>
+66
+67</manifest>
